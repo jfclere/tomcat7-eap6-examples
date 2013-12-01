@@ -7,9 +7,9 @@ http://www.jboss.org/jbossas/downloads/
 download latest EAP 6.2  
 unzip it.  
 download the jbossweb.jar (I am using 7.4.0.Beta1)  
-'''Shell
+```Shell
 wget https://repository.jboss.org/nexus/content/groups/public/org/jboss/web/jbossweb/7.4.0.Beta1/jbossweb-7.4.0.Beta1.jar
-'''
+```
 copy the jbossweb jar on to the existing one: (I am using jboss-eap-6.2.0.Beta)
 +++
 cp jbossweb-7.4.0.Beta1.jar ./modules/system/layers/base/org/jboss/as/web/main/jbossweb-7.2.2.Final-redhat-1.jar
