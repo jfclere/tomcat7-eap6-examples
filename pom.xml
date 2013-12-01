@@ -52,6 +52,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.jboss.web</groupId>
+            <artifactId>jbossweb</artifactId>
+            <version>7.4.0.Beta1</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
