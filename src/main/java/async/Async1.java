@@ -30,7 +30,7 @@ public class Async1 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Logger log = Logger.getLog(Async1.class);
+    private static final Logger log = Logger.getLogger(Async1.class);
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

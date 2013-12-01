@@ -31,7 +31,7 @@ import org.jboss.logging.Logger;
 public class SnakeTimer {
 
     private static final Logger log =
-            Logger.getLog(SnakeTimer.class);
+            Logger.getLogger(SnakeTimer.class);
 
     private static Timer gameTimer = null;
 

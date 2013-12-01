@@ -33,7 +33,7 @@ import websocket.drawboard.wsmessages.StringWebsocketMessage;
 public final class DrawboardEndpoint extends Endpoint {
 
     private static final Logger log =
-            Logger.getLog(DrawboardEndpoint.class);
+            Logger.getLogger(DrawboardEndpoint.class);
 
 
     /**
