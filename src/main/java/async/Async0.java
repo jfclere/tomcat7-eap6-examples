@@ -24,14 +24,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.juli.logging.Log;
-import org.apache.juli.logging.LogFactory;
+import org.jboss.logging.Logger;
 
 public class Async0 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Log log = LogFactory.getLog(Async0.class);
+    private static final Logger log = Logger.getLog(Async0.class);
 
     @Override
     protected void service(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {

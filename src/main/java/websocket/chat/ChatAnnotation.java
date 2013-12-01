@@ -28,15 +28,14 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-import org.apache.juli.logging.Log;
-import org.apache.juli.logging.LogFactory;
+import org.jboss.logging.Logger;
 
 import util.HTMLFilter;
 
 @ServerEndpoint(value = "/websocket/chat")
 public class ChatAnnotation {
 
-    private static final Log log = LogFactory.getLog(ChatAnnotation.class);
+    private static final Logger log = Logger.getLog(ChatAnnotation.class);
 
     private static final String GUEST_PREFIX = "Guest";
     private static final AtomicInteger connectionIds = new AtomicInteger(0);

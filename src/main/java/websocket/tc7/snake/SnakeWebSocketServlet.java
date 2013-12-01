@@ -36,8 +36,7 @@ import org.apache.catalina.websocket.MessageInbound;
 import org.apache.catalina.websocket.StreamInbound;
 import org.apache.catalina.websocket.WebSocketServlet;
 import org.apache.catalina.websocket.WsOutbound;
-import org.apache.juli.logging.Log;
-import org.apache.juli.logging.LogFactory;
+import org.jboss.logging.Logger;
 
 /**
  * Example web socket servlet for simple multi-player snake.
@@ -48,8 +47,8 @@ public class SnakeWebSocketServlet extends WebSocketServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Log log =
-            LogFactory.getLog(SnakeWebSocketServlet.class);
+    private static final Logger log =
+            Logger.getLog(SnakeWebSocketServlet.class);
 
     public static final int PLAYFIELD_WIDTH = 640;
     public static final int PLAYFIELD_HEIGHT = 480;

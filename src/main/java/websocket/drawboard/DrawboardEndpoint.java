@@ -24,8 +24,7 @@ import javax.websocket.EndpointConfig;
 import javax.websocket.MessageHandler;
 import javax.websocket.Session;
 
-import org.apache.juli.logging.Log;
-import org.apache.juli.logging.LogFactory;
+import org.jboss.logging.Logger;
 
 import websocket.drawboard.DrawMessage.ParseException;
 import websocket.drawboard.wsmessages.StringWebsocketMessage;
@@ -33,8 +32,8 @@ import websocket.drawboard.wsmessages.StringWebsocketMessage;
 
 public final class DrawboardEndpoint extends Endpoint {
 
-    private static final Log log =
-            LogFactory.getLog(DrawboardEndpoint.class);
+    private static final Logger log =
+            Logger.getLog(DrawboardEndpoint.class);
 
 
     /**
